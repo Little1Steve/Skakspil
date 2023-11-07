@@ -8,7 +8,7 @@ namespace Skakspil
 {
     internal class Pieces
     {
-
+        //public List<Moves> legalMoves;
     }
     internal class King: Pieces
     {

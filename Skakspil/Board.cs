@@ -8,6 +8,7 @@ namespace Skakspil
 {
     internal class Board
     {
+        Pieces[][] board;
 
     }
 }
