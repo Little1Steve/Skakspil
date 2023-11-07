@@ -10,4 +10,28 @@ namespace Skakspil
     {
 
     }
+    internal class King: Pieces
+    {
+
+    }
+    internal class Queen: Pieces
+    {
+
+    }
+    internal class Bishop: Pieces
+    {
+
+    }
+    internal class Knight: Pieces
+    {
+
+    }
+    internal class Rook: Pieces
+    {
+
+    }
+    internal class Pawn: Pieces
+    {
+
+    }
 }
