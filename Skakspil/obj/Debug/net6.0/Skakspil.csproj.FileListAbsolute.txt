@@ -1,0 +1,15 @@
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.csproj.AssemblyReference.cache
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.AssemblyInfoInputs.cache
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.AssemblyInfo.cs
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.csproj.CoreCompileInputs.cache
+C:\Users\estra\source\repos\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.exe
+C:\Users\estra\source\repos\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.deps.json
+C:\Users\estra\source\repos\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.runtimeconfig.json
+C:\Users\estra\source\repos\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.dll
+C:\Users\estra\source\repos\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.pdb
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.dll
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\refint\Skakspil.dll
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.pdb
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.genruntimeconfig.cache
+C:\Users\estra\source\repos\Skakspil\Skakspil\obj\Debug\net6.0\ref\Skakspil.dll
