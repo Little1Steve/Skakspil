@@ -8,7 +8,7 @@ namespace Skakspil
 {
     internal class Board
     {
-        Pieces[,]? board;
+        public Pieces[,]? board;
         King blackKing = new King()[4][0];
         King whiteKing = new King()[4][7];
 

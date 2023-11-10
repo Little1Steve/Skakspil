@@ -8,6 +8,15 @@ namespace Skakspil
 {
     internal class Moves
     {
+        public int startColumn;
+        public int startRow;
+        
+        public int endColumn;
+        public int endRow;
 
+        public void MovePiece(Pieces piece, int startColumn, int startRow, int endColumn, int endRow)
+        {
+
+        }
     }
 }
