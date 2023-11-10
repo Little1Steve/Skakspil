@@ -9,7 +9,7 @@ namespace Skakspil
     internal class Board
     {
         public Pieces[,]? board;
-        King blackKing = new King()[4][0];
+        /*King blackKing = new King()[4][0];
         King whiteKing = new King()[4][7];
 
         Queen blackQueen = new Queen()[3][0];
@@ -28,6 +28,8 @@ namespace Skakspil
         Rook blackRook1 = new Rook()[][];
         Rook blackRook2 = new Rook()[][];
         Rook whiteRook1 = new Rook()[][];
-        Rook whiteRook2 = new Rook()[][];
+        Rook whiteRook2 = new Rook()[][];*/
+
+
     }
 }

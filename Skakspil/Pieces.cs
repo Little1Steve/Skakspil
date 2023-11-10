@@ -15,6 +15,18 @@ namespace Skakspil
         {
             this.white = white;
         }
+
+        public int startColumn;
+        public int startRow;
+
+        public int endColumn;
+        public int endRow;
+
+        public void MovePiece(Pieces piece, int endColumn, int endRow)
+        {
+           // startRow = Array.LastIndexOf(board, piece);
+
+        }
     }
     internal class King : Pieces
     {
