@@ -8,7 +8,7 @@ namespace Skakspil
 {
     internal class Board
     {
-        Pieces[,] board;
+        Pieces[,]? board;
         King blackKing = new King()[4][0];
         King whiteKing = new King()[4][7];
 
@@ -20,15 +20,14 @@ namespace Skakspil
         Bishop whiteBishop1 = new Bishop()[2][7];
         Bishop whiteBishop2 = new Bishop()[5][7];
 
-        Knight blackKnight1 = new Knight();
-        Knight blackKnight2 = new Knight();
-        Knight whiteKnight1 = new Knight();
-        Knight whiteKnight2 = new Knight();
+        Knight blackKnight1 = new Knight()[][];
+        Knight blackKnight2 = new Knight()[][];
+        Knight whiteKnight1 = new Knight()[][];
+        Knight whiteKnight2 = new Knight()[][];
 
-        Rook blackRook1 = new Rook();
-        Rook blackRook2 = new Rook();
-        Rook whiteRook1 = new Rook();
-        Rook whiteRook2 = new Rook();
-
+        Rook blackRook1 = new Rook()[][];
+        Rook blackRook2 = new Rook()[][];
+        Rook whiteRook1 = new Rook()[][];
+        Rook whiteRook2 = new Rook()[][];
     }
 }
