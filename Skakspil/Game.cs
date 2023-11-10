@@ -10,6 +10,10 @@ namespace Skakspil
     {
         public void Play()
         {
+            SetupBoard();
+        }
+        void SetupBoard()
+        {
 
         }
     }

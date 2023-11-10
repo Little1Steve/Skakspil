@@ -56,10 +56,4 @@ namespace Skakspil
         {
         }
     }
-    internal class Empty : Pieces
-    {
-        public Empty(bool white) : base(white)
-        {
-        }
-    }
 }
