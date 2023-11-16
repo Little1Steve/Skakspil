@@ -20,5 +20,17 @@ namespace Skakspil
             board.board[1, 0] = new Knight(false);
             board.board[2, 0] = King;
         }
+        public string Display(int x, int y)
+        {
+            Pieces piece = board.board[x, y];
+            if(piece == null)
+            {
+                return " ";
+            }
+            else
+            {
+                return piece.name;
+            }
+        }
     }
 }

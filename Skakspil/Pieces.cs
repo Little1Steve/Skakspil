@@ -20,12 +20,22 @@ namespace Skakspil
         public int index1;
         public int index2;
 
+
+        public string name;
     }
     internal class King : Pieces
     {
+        
         public King(bool white) : base(white)
         {
-            
+            if (white)
+            {
+                name = "k";
+            }
+            else
+            {
+                name = "K";
+            }
         }
     }
     internal class Queen : Pieces
