@@ -12,13 +12,9 @@ namespace Skakspil
         public Board board = new Board();
         public void Play()
         {
-            SetupBoard();
             GetInput();
         }
-        void SetupBoard()
-        {
-            
-        }
+
         void GetInput()
         {
             Console.WriteLine("Hi and welcome to this game of chess");
@@ -70,8 +66,10 @@ namespace Skakspil
         }
         public string Display(int x, int y)
         {
-            Pieces piece = board.board[x, y];
-            if(piece == null)
+
+            Pieces piece = board.board[y, x];
+
+            if (board.board[y, x] == null)
             {
                 return " ";
             }

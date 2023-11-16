@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,6 @@ namespace Skakspil
 
         public int index1;
         public int index2;
-
 
         public string name;
     }
@@ -106,6 +106,13 @@ namespace Skakspil
             {
                 name = "P";
             }
+        }
+    }
+    internal class Empty : Pieces
+    {
+        public Empty(bool white) : base(white)
+        {
+
         }
     }
 }

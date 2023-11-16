@@ -28,3 +28,17 @@ C:\Users\Nexus borger\Documents\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.dll
 C:\Users\Nexus borger\Documents\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.pdb
 C:\Users\Nexus borger\Documents\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.genruntimeconfig.cache
 C:\Users\Nexus borger\Documents\Skakspil\Skakspil\obj\Debug\net6.0\ref\Skakspil.dll
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.AssemblyInfoInputs.cache
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.AssemblyInfo.cs
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.csproj.CoreCompileInputs.cache
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.dll
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\refint\Skakspil.dll
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.pdb
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.exe
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.deps.json
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.runtimeconfig.json
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.dll
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\bin\Debug\net6.0\Skakspil.pdb
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\Skakspil.genruntimeconfig.cache
+C:\Users\estra\Documents\GitHub\Skakspil\Skakspil\obj\Debug\net6.0\ref\Skakspil.dll

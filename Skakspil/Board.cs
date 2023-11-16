@@ -9,28 +9,18 @@ namespace Skakspil
     internal class Board
     {
 
-        
-        public Pieces[,]? board;
-        /*King blackKing = new King()[4][0];
-        King whiteKing = new King()[4][7];
+        public Pieces[,] board = { 
 
-        Queen blackQueen = new Queen()[3][0];
-        Queen whiteQueen = new Queen()[3][7];
+        {new Rook(false), new Knight(false), new Bishop(false), new Queen(false), new King(false), new Bishop(false), new Knight(false), new Rook(false) },
+        {new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false) },
+        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false) },
+        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
+        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
+        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
+        {new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true)},
+        {new Rook(true), new Knight(true), new Bishop(true), new Queen(true), new King(true), new Bishop(true), new Knight(true), new Rook(true) },
 
-        Bishop blackBishop1 = new Bishop()[2][0];
-        Bishop blackBishop2 = new Bishop()[5][0];
-        Bishop whiteBishop1 = new Bishop()[2][7];
-        Bishop whiteBishop2 = new Bishop()[5][7];
-
-        Knight blackKnight1 = new Knight()[][];
-        Knight blackKnight2 = new Knight()[][];
-        Knight whiteKnight1 = new Knight()[][];
-        Knight whiteKnight2 = new Knight()[][];
-
-        Rook blackRook1 = new Rook()[][];
-        Rook blackRook2 = new Rook()[][];
-        Rook whiteRook1 = new Rook()[][];
-        Rook whiteRook2 = new Rook()[][];*/
+        };
 
         public void MovePiece(Tuple<int, int> startPos, Tuple<int, int> endPos)
         {
