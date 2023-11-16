@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,18 +13,19 @@ namespace Skakspil
         public void Play()
         {
             SetupBoard();
+            GetInput();
         }
         void SetupBoard()
         {
-            board.board[0, 0] = new Rook(false);
-            board.board[1, 0] = new Knight(false);
-            board.board[2, 0] = new King(false);
+            
         }
         void GetInput()
         {
             Console.WriteLine("Hi and welcome to this game of chess");
             Console.WriteLine("");
-            Console.WriteLine("" +
+            while (true)
+            {
+                Console.WriteLine("" +
     "╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗\n" +
     $"║ {Display(0, 0)} ║ {Display(1, 0)} ║ {Display(2, 0)} ║ {Display(3, 0)} ║ {Display(4, 0)} ║ {Display(5, 0)} ║ {Display(6, 0)} ║ {Display(7, 0)} ║ 8\n" +
     "╠═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╣\n" +
@@ -42,6 +44,29 @@ namespace Skakspil
     $"║ {Display(0, 7)} ║ {Display(1, 7)} ║ {Display(2, 7)} ║ {Display(3, 7)} ║ {Display(4, 7)} ║ {Display(5, 7)} ║ {Display(6, 7)} ║ {Display(7, 7)} ║ 1\n" +
     "╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝\n" +
     "  a   b   c   d   e   f   g   h");
+
+                
+
+                while (true)
+                {
+                    Console.WriteLine("\n" + "What piece would you like to move, and where to?");
+                    string input = Console.ReadLine();
+                    
+
+                    Tuple<int, int> startPos = new(
+                        IndexFinder(input.Substring(0, 1)), 
+                        Int32.Parse(input.Substring(1, 1))
+                        );
+
+                    Tuple<int, int> endPos = new(
+                        IndexFinder(input.Substring(0, 1)),
+                        Int32.Parse(input.Substring(3, 1))
+                        );
+
+                    board.MovePiece(startPos, endPos);
+                }
+            }
+            
         }
         public string Display(int x, int y)
         {
@@ -54,6 +79,32 @@ namespace Skakspil
             {
                 return piece.name;
             }
+        }
+        int IndexFinder(string input)
+        {
+
+            switch (input)
+            {
+                case "a":
+                    return 0;
+                case "b":
+                    return 1;
+                case "c":
+                    return 2;
+                case "d":
+                    return 3;
+                case "e":
+                    return 4;
+                case "f":
+                    return 5;
+                case "g":
+                    return 6;
+                case "h":
+                    return 7;
+                default:
+                    return -1;
+            }
+            
         }
     }
 }

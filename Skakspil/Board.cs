@@ -9,17 +9,7 @@ namespace Skakspil
     internal class Board
     {
 
-        enum index
-        {
-            a, //0
-            b, //1
-            c, //2
-            d,
-            e,
-            f,
-            g,
-            h,
-        }
+        
         public Pieces[,]? board;
         /*King blackKing = new King()[4][0];
         King whiteKing = new King()[4][7];
@@ -48,7 +38,7 @@ namespace Skakspil
             piece.index1 = endPos.Item1;
             piece.index2 = endPos.Item2;
 
-            
+            this.board[endPos.Item1, endPos.Item2] = piece;
 
         }
     }
