@@ -9,8 +9,7 @@ namespace Skakspil
 {
     internal class Moves
     {
-        Tuple<int, int> index;
-
-        
+        Tuple<int, int> Startindex;
+        Tuple<int, int> Endindex;
     }
 }

@@ -9,7 +9,6 @@ namespace Skakspil
     internal class Game
     {
         public Board board = new Board();
-        public King King = new King(false);
         public void Play()
         {
             SetupBoard();
@@ -17,8 +16,13 @@ namespace Skakspil
         void SetupBoard()
         {
             board.board[0, 0] = new Rook(false);
-            board.board[1, 0] = new Knight(true);
-            board.board[2, 0] = King;
+            board.board[1, 0] = new Knight(false);
+            board.board[2, 0] = new King(false);
+        }
+        void GetInput()
+        {
+            Console.WriteLine("Hi and welcome to this game of chess");
+            Console.WriteLine("");
         }
         public string Display(int x, int y)
         {
