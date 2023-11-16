@@ -9,7 +9,7 @@ namespace Skakspil
     internal class Game
     {
         public Board board = new Board();
-        public King King;
+        public King King = new King(false);
         public void Play()
         {
             SetupBoard();
@@ -17,8 +17,8 @@ namespace Skakspil
         void SetupBoard()
         {
             board.board[0, 0] = new Rook(false);
-            board.board[1, 0] = new Knight(false);
-            board.board[2, 0] = new King(false);
+            board.board[1, 0] = new Knight(true);
+            board.board[2, 0] = King;
         }
     }
 }

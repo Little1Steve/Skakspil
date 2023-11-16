@@ -24,5 +24,3 @@ Console.WriteLine("" +
     "║ r ║ n ║ b ║ q ║ k ║ b ║ n ║ r ║ 1\n" +
     "╚═══╩═══╩═══╩═══╩═══╩═══╩═══╩═══╝\n" +
     "  a   b   c   d   e   f   g   h");
-
-Console.WriteLine(Array.LastIndexOf(game.board.board, game.King));

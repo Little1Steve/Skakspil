@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,23 +17,15 @@ namespace Skakspil
             this.white = white;
         }
 
-        public int startColumn;
-        public int startRow;
+        public int index1;
+        public int index2;
 
-        public int endColumn;
-        public int endRow;
-
-        public void MovePiece(Pieces piece, int endColumn, int endRow)
-        {
-           // startRow = Array.LastIndexOf(board, piece);
-
-        }
     }
     internal class King : Pieces
     {
         public King(bool white) : base(white)
         {
-            base.white = white;
+            
         }
     }
     internal class Queen : Pieces
