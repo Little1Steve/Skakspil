@@ -8,6 +8,18 @@ namespace Skakspil
 {
     internal class Board
     {
+
+        enum index
+        {
+            a, //0
+            b, //1
+            c, //2
+            d,
+            e,
+            f,
+            g,
+            h,
+        }
         public Pieces[,]? board;
         /*King blackKing = new King()[4][0];
         King whiteKing = new King()[4][7];
