@@ -42,33 +42,70 @@ namespace Skakspil
     {
         public Queen(bool white) : base(white)
         {
-            
+            if (white)
+            {
+                name = "q";
+            }
+            else
+            {
+                name = "Q";
+            }
         }
     }
     internal class Bishop : Pieces
     {
         public Bishop(bool white) : base(white)
         {
-
+            if (white)
+            {
+                name = "b";
+            }
+            else
+            {
+                name = "B";
+            }
         }
     }
     internal class Knight : Pieces
     {
         public Knight(bool white) : base(white)
         {
-
+            if (white)
+            {
+                name = "n";
+            }
+            else
+            {
+                name = "N";
+            }
         }
     }
     internal class Rook : Pieces
     {
         public Rook(bool white) : base(white)
         {
+            if (white)
+            {
+                name = "r";
+            }
+            else
+            {
+                name = "R";
+            }
         }
     }
     internal class Pawn : Pieces
     {
         public Pawn(bool white) : base(white)
         {
+            if (white)
+            {
+                name = "p";
+            }
+            else
+            {
+                name = "P";
+            }
         }
     }
 }
