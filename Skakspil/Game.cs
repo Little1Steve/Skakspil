@@ -17,8 +17,8 @@ namespace Skakspil
         void SetupBoard()
         {
             board.board[0, 0] = new Rook(false);
-            board.board[1, 0] = new Knight(true);
-            board.board[2, 0] = King;
+            board.board[1, 0] = new Knight(false);
+            board.board[2, 0] = new King(false);
         }
     }
 }

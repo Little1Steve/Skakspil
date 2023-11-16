@@ -3,6 +3,8 @@
 Game game = new Game();
 game.Play();
 
+Console.WriteLine("Welcome to the chess game");
+Console.WriteLine("Feel free to make white's first move");
 Console.WriteLine("" +
     "╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗\n" +
     "║ R ║ N ║ B ║ Q ║ K ║ B ║ N ║ R ║ 8\n" +
