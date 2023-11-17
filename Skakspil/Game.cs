@@ -50,16 +50,17 @@ namespace Skakspil
                     
 
                     Tuple<int, int> startPos = new(
-                        IndexFinder(input.Substring(0, 1)), 
-                        Int32.Parse(input.Substring(1, 1))
+                        Int32.Parse(input.Substring(1, 1)),
+                        IndexFinder(input.Substring(0, 1)) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        IndexFinder(input.Substring(0, 1)),
-                        Int32.Parse(input.Substring(3, 1))
+                        Int32.Parse(input.Substring(3, 1)),
+                        IndexFinder(input.Substring(2, 1))
                         );
 
                     board.MovePiece(startPos, endPos);
+                    break;
                 }
             }
             
@@ -69,14 +70,8 @@ namespace Skakspil
 
             Pieces piece = board.board[y, x];
 
-            if (board.board[y, x] == null)
-            {
-                return " ";
-            }
-            else
-            {
-                return piece.name;
-            }
+            return piece.name;
+            
         }
         int IndexFinder(string input)
         {

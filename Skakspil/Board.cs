@@ -30,6 +30,8 @@ namespace Skakspil
 
             this.board[endPos.Item1, endPos.Item2] = piece;
 
+            this.board[startPos.Item1, startPos.Item2] = new Empty(false);
+
         }
     }
 }

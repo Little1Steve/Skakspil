@@ -112,7 +112,7 @@ namespace Skakspil
     {
         public Empty(bool white) : base(white)
         {
-
+            name = " ";
         }
     }
 }
