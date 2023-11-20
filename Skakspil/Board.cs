@@ -11,14 +11,14 @@ namespace Skakspil
 
         public Pieces[,] board = { 
 
-        {new Rook(false), new Knight(false), new Bishop(false), new Queen(false), new King(false), new Bishop(false), new Knight(false), new Rook(false) },
-        {new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false), new Pawn(false) },
-        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false) },
-        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
-        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
-        {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
-        {new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true)},
-        {new Rook(true), new Knight(true), new Bishop(true), new Queen(true), new King(true), new Bishop(true), new Knight(true), new Rook(true) },
+        {new Rook(false),  new Knight(false), new Bishop(false), new Queen(false), new King(false),  new Bishop(false), new Knight(false), new Rook(false) },
+        {new Pawn(false),  new Pawn(false),   new Pawn(false),   new Pawn(false),  new Pawn(false),  new Pawn(false),   new Pawn(false),   new Pawn(false) },
+        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false) },
+        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
+        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
+        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
+        {new Pawn(true),   new Pawn(true),    new Pawn(true),    new Pawn(true),   new Pawn(true),   new Pawn(true),    new Pawn(true),    new Pawn(true)},
+        {new Rook(true),   new Knight(true),  new Bishop(true),  new Queen(true),  new King(true),   new Bishop(true),  new Knight(true),  new Rook(true) }
 
         };
 

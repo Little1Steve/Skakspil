@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\estra\\source\\repos\\Skakspil\\Skakspil\\Skakspil.csproj": {}
+    "C:\\Users\\Nexus borger\\Documents\\Skakspil\\Skakspil\\Skakspil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\estra\\source\\repos\\Skakspil\\Skakspil\\Skakspil.csproj": {
+    "C:\\Users\\Nexus borger\\Documents\\Skakspil\\Skakspil\\Skakspil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estra\\source\\repos\\Skakspil\\Skakspil\\Skakspil.csproj",
+        "projectUniqueName": "C:\\Users\\Nexus borger\\Documents\\Skakspil\\Skakspil\\Skakspil.csproj",
         "projectName": "Skakspil",
-        "projectPath": "C:\\Users\\estra\\source\\repos\\Skakspil\\Skakspil\\Skakspil.csproj",
-        "packagesPath": "C:\\Users\\estra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estra\\source\\repos\\Skakspil\\Skakspil\\obj\\",
+        "projectPath": "C:\\Users\\Nexus borger\\Documents\\Skakspil\\Skakspil\\Skakspil.csproj",
+        "packagesPath": "C:\\Users\\Nexus borger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nexus borger\\Documents\\Skakspil\\Skakspil\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\estra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nexus borger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

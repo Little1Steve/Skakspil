@@ -47,16 +47,39 @@ namespace Skakspil
                 {
                     Console.WriteLine("\n" + "What piece would you like to move, and where to?");
                     string input = Console.ReadLine();
-                    
+
+                    string input1 = input.Substring(0, 1);
+                    int input2 = Convert.ToInt32(input.Substring(1, 1));
+                    string input3 = input.Substring(2, 1);
+                    int input4 = Convert.ToInt32(input.Substring(3, 1));
+
+                    if (input1 != "a" || input1 != "b" || input1 != "c" || input1 != "d" || input1 != "e" || input1 != "f" || input1 != "g" || input1 != "h") {
+                        Console.WriteLine("Invalid input");
+                    }
+
+                    if (input2 != 1 || input2 != 2 || input2 != 3 || input2 != 4 || input2 != 5 || input2 != 6 || input2 != 7 || input2 != 8)
+                    {
+                        Console.WriteLine("Invalid input");
+                    }
+
+                    if (input3 != "a" || input3 != "b" || input3 != "c" || input3 != "d" || input3 != "e" || input3 != "f" || input3 != "g" || input3 != "h")
+                    {
+                        Console.WriteLine("Invalid input");
+                    }
+
+                    if (input4 != 1 || input4 != 2 || input4 != 3 || input4 != 4 || input4 != 5 || input4 != 6 || input4 != 7 || input4 != 8)
+                    {
+                        Console.WriteLine("Invalid input");
+                    }
 
                     Tuple<int, int> startPos = new(
-                        Int32.Parse(input.Substring(1, 1)),
-                        IndexFinder(input.Substring(0, 1)) 
+                        input2,
+                        IndexFinder(input1) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        Int32.Parse(input.Substring(3, 1)),
-                        IndexFinder(input.Substring(2, 1))
+                        input4,
+                        IndexFinder(input3)
                         );
 
                     board.MovePiece(startPos, endPos);
