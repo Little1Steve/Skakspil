@@ -79,12 +79,12 @@ namespace Skakspil
                     }
 
                     Tuple<int, int> startPos = new(
-                        IndexFinderV2(Int32.Parse(input.Substring(1, 1)))+1,
+                        IndexFinderV2(Int32.Parse(input.Substring(1, 1)))-1,
                         IndexFinder(input.Substring(0, 1)) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        IndexFinderV2(Int32.Parse(input.Substring(3, 1)))+1,
+                        IndexFinderV2(Int32.Parse(input.Substring(3, 1)))-1,
                         IndexFinder(input.Substring(2, 1))
                         );
 

@@ -24,11 +24,11 @@ namespace Skakspil
 
         public void MovePiece(Tuple<int, int> startPos, Tuple<int, int> endPos)
         {
-            Pieces piece = this.board[startPos.Item1, startPos.Item2];
+            Pieces piece = this.board[startPos.Item1+2, startPos.Item2];
 
-            this.board[endPos.Item1, endPos.Item2] = piece;
+            this.board[endPos.Item1+2, endPos.Item2] = piece;
 
-            this.board[startPos.Item1, startPos.Item2] = new Empty(false);
+            this.board[startPos.Item1+2, startPos.Item2] = new Empty(false);
 
         }
     }
