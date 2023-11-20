@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -73,16 +74,17 @@ namespace Skakspil
                     }
 
                     Tuple<int, int> startPos = new(
-                        input2,
-                        IndexFinder(input1) 
+                        Int32.Parse(input.Substring(1, 1)),
+                        IndexFinder(input.Substring(0, 1)) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        input4,
-                        IndexFinder(input3)
+                        Int32.Parse(input.Substring(3, 1)),
+                        IndexFinder(input.Substring(2, 1))
                         );
 
                     board.MovePiece(startPos, endPos);
+                    Console.WriteLine($"{board.board[endPos.Item2, endPos.Item1].name}");
                     break;
                 }
             }
@@ -102,21 +104,21 @@ namespace Skakspil
             switch (input)
             {
                 case "a":
-                    return 0;
-                case "b":
-                    return 1;
-                case "c":
-                    return 2;
-                case "d":
-                    return 3;
-                case "e":
-                    return 4;
-                case "f":
-                    return 5;
-                case "g":
-                    return 6;
-                case "h":
                     return 7;
+                case "b":
+                    return 6;
+                case "c":
+                    return 5;
+                case "d":
+                    return 4;
+                case "e":
+                    return 3;
+                case "f":
+                    return 2;
+                case "g":
+                    return 1;
+                case "h":
+                    return 0;
                 default:
                     return -1;
             }
