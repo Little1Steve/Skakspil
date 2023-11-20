@@ -54,23 +54,28 @@ namespace Skakspil
                     string input3 = input.Substring(2, 1);
                     int input4 = Convert.ToInt32(input.Substring(3, 1));
 
-                    if (input1 != "a" || input1 != "b" || input1 != "c" || input1 != "d" || input1 != "e" || input1 != "f" || input1 != "g" || input1 != "h") {
+                    if (input1 == "a" || input1 == "b" || input1 == "c" || input1 == "d" || input1 == "e" || input1 == "f" || input1 == "g" || input1 == "h") {
+                    } else {
                         Console.WriteLine("Invalid input");
+                        break;
                     }
 
-                    if (input2 != 1 || input2 != 2 || input2 != 3 || input2 != 4 || input2 != 5 || input2 != 6 || input2 != 7 || input2 != 8)
-                    {
+                    if (input2 == 1 || input2 == 2 || input2 == 3 || input2 == 4 || input2 == 5 || input2 == 6 || input2 == 7 || input2 == 8) {
+                    } else {
                         Console.WriteLine("Invalid input");
+                        break;
                     }
 
-                    if (input3 != "a" || input3 != "b" || input3 != "c" || input3 != "d" || input3 != "e" || input3 != "f" || input3 != "g" || input3 != "h")
-                    {
+                    if (input3 == "a" || input3 == "b" || input3 == "c" || input3 == "d" || input3 == "e" || input3 == "f" || input3 == "g" || input3 == "h") {
+                    } else {
                         Console.WriteLine("Invalid input");
+                        break;
                     }
 
-                    if (input4 != 1 || input4 != 2 || input4 != 3 || input4 != 4 || input4 != 5 || input4 != 6 || input4 != 7 || input4 != 8)
-                    {
+                    if (input4 == 1 || input4 == 2 || input4 == 3 || input4 == 4 || input4 == 5 || input4 == 6 || input4 == 7 || input4 == 8) {
+                    } else {
                         Console.WriteLine("Invalid input");
+                        break;
                     }
 
                     Tuple<int, int> startPos = new(
