@@ -79,12 +79,12 @@ namespace Skakspil
                     }
 
                     Tuple<int, int> startPos = new(
-                        Int32.Parse(input.Substring(1, 1)),
+                        IndexFinderV2(Int32.Parse(input.Substring(1, 1)))+1,
                         IndexFinder(input.Substring(0, 1)) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        Int32.Parse(input.Substring(3, 1)),
+                        IndexFinderV2(Int32.Parse(input.Substring(3, 1)))+1,
                         IndexFinder(input.Substring(2, 1))
                         );
 
@@ -109,25 +109,49 @@ namespace Skakspil
             switch (input)
             {
                 case "a":
-                    return 7;
-                case "b":
-                    return 6;
-                case "c":
-                    return 5;
-                case "d":
-                    return 4;
-                case "e":
-                    return 3;
-                case "f":
-                    return 2;
-                case "g":
-                    return 1;
-                case "h":
                     return 0;
+                case "b":
+                    return 1;
+                case "c":
+                    return 2;
+                case "d":
+                    return 3;
+                case "e":
+                    return 4;
+                case "f":
+                    return 5;
+                case "g":
+                    return 6;
+                case "h":
+                    return 7;
                 default:
                     return -1;
             }
             
+        }
+
+        int IndexFinderV2(int input)
+        {
+            switch (input)
+            {
+                case 0:
+                    return 7;
+                case 1:
+                    return 6;
+                case 2:
+                    return 5;
+                case 3:
+                    return 4;
+                case 4:
+                    return 3;
+                case 5:
+                    return 2;
+                case 6:
+                    return 1;
+                case 7:
+                    return 0;
+            }
+            return 1;
         }
     }
 }
