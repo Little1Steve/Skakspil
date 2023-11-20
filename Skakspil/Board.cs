@@ -18,15 +18,13 @@ namespace Skakspil
         {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
         {new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false), new Empty(false)},
         {new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true), new Pawn(true)},
-        {new Rook(true), new Knight(true), new Bishop(true), new Queen(true), new King(true), new Bishop(true), new Knight(true), new Rook(true) },
+        {new Rook(true), new Knight(true), new Bishop(true), new Queen(true), new King(true), new Bishop(true), new Knight(true), new Rook(true) }
 
         };
 
         public void MovePiece(Tuple<int, int> startPos, Tuple<int, int> endPos)
         {
             Pieces piece = this.board[startPos.Item1, startPos.Item2];
-            piece.index1 = endPos.Item1;
-            piece.index2 = endPos.Item2;
 
             this.board[endPos.Item1, endPos.Item2] = piece;
 
