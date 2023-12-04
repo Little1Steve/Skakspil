@@ -56,25 +56,25 @@ namespace Skakspil
 
                     if (input1 == "a" || input1 == "b" || input1 == "c" || input1 == "d" || input1 == "e" || input1 == "f" || input1 == "g" || input1 == "h") {
                     } else {
-                        Console.WriteLine("Invalid input");
+                        Console.WriteLine("Invalid input\nTry again");
                         break;
                     }
 
                     if (input2 == 1 || input2 == 2 || input2 == 3 || input2 == 4 || input2 == 5 || input2 == 6 || input2 == 7 || input2 == 8) {
                     } else {
-                        Console.WriteLine("Invalid input");
+                        Console.WriteLine("Invalid input\nTry again");
                         break;
                     }
 
                     if (input3 == "a" || input3 == "b" || input3 == "c" || input3 == "d" || input3 == "e" || input3 == "f" || input3 == "g" || input3 == "h") {
                     } else {
-                        Console.WriteLine("Invalid input");
+                        Console.WriteLine("Invalid input\nTry again");
                         break;
                     }
 
                     if (input4 == 1 || input4 == 2 || input4 == 3 || input4 == 4 || input4 == 5 || input4 == 6 || input4 == 7 || input4 == 8) {
                     } else {
-                        Console.WriteLine("Invalid input");
+                        Console.WriteLine("Invalid input\nTry again");
                         break;
                     }
 

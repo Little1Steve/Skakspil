@@ -26,9 +26,17 @@ namespace Skakspil
         {
             Pieces piece = this.board[startPos.Item1, startPos.Item2];
 
-            this.board[endPos.Item1, endPos.Item2] = piece;
+            if (!piece.empty)
+            {
+                this.board[endPos.Item1, endPos.Item2] = piece;
 
-            this.board[startPos.Item1, startPos.Item2] = new Empty(false);
+                this.board[startPos.Item1, startPos.Item2] = new Empty(false);
+            }
+            else
+            {
+                Console.WriteLine("You must move a piece\nTry again");
+            }
+            
 
         }
     }

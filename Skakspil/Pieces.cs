@@ -12,6 +12,7 @@ namespace Skakspil
     {
         public List<Moves> legalMoves;
         public bool white = false;
+        public bool empty = false;
 
         public Pieces(bool white)
         {
@@ -112,6 +113,7 @@ namespace Skakspil
     {
         public Empty(bool white) : base(white)
         {
+            this.empty = true;
             name = " ";
         }
     }
