@@ -79,12 +79,12 @@ namespace Skakspil
                     }
 
                     Tuple<int, int> startPos = new(
-                        IndexFinderV2(Int32.Parse(input.Substring(1, 1)))-1,
+                        IndexFinderV2(Int32.Parse(input.Substring(1, 1))),
                         IndexFinder(input.Substring(0, 1)) 
                         );
 
                     Tuple<int, int> endPos = new(
-                        IndexFinderV2(Int32.Parse(input.Substring(3, 1)))-1,
+                        IndexFinderV2(Int32.Parse(input.Substring(3, 1))),
                         IndexFinder(input.Substring(2, 1))
                         );
 
@@ -134,24 +134,24 @@ namespace Skakspil
         {
             switch (input)
             {
-                case 0:
-                    return 7;
                 case 1:
-                    return 6;
+                    return 7;
                 case 2:
-                    return 5;
+                    return 6;
                 case 3:
-                    return 4;
+                    return 5;
                 case 4:
-                    return 3;
+                    return 4;
                 case 5:
-                    return 2;
+                    return 3;
                 case 6:
-                    return 1;
+                    return 2;
                 case 7:
+                    return 1;
+                case 8:
                     return 0;
             }
-            return 1;
+            return -1;
         }
     }
 }

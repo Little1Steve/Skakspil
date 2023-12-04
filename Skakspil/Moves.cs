@@ -9,7 +9,6 @@ namespace Skakspil
 {
     internal class Moves
     {
-        Tuple<int, int> Startindex;
-        Tuple<int, int> Endindex;
+        // Denne kan bruges til hvis man ville lave lovlige og ulovlige træk
     }
 }
