@@ -22,20 +22,40 @@ namespace Skakspil
 
         };
 
+        public bool whiteTurn = true;
+
         public void MovePiece(Tuple<int, int> startPos, Tuple<int, int> endPos)
         {
             Pieces piece = this.board[startPos.Item1, startPos.Item2];
 
-            if (!piece.empty)
+            if (!piece.empty && piece.white == whiteTurn)
             {
                 this.board[endPos.Item1, endPos.Item2] = piece;
 
                 this.board[startPos.Item1, startPos.Item2] = new Empty(false);
+                if (whiteTurn)
+                {
+                    whiteTurn = false;
+                }
+                else
+                {
+                    whiteTurn = true;
+                }
+            }
+            else if(piece.empty)
+            {
+                Console.WriteLine("You must move a piece.\nTry again");
+            }
+            else if(piece.white != whiteTurn)
+            {
+                Console.WriteLine("You must move a piece according to whose turn it is.\nTry again");
             }
             else
             {
-                Console.WriteLine("You must move a piece\nTry again");
+                Console.WriteLine("Error");
             }
+            
+
             
 
         }
