@@ -13,10 +13,10 @@ namespace Skakspil
 
         {new Rook(false),  new Knight(false), new Bishop(false), new Queen(false), new King(false),  new Bishop(false), new Knight(false), new Rook(false) },
         {new Pawn(false),  new Pawn(false),   new Pawn(false),   new Pawn(false),  new Pawn(false),  new Pawn(false),   new Pawn(false),   new Pawn(false) },
-        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false) },
+        {new Empty(false), new Empty(false),  new Empty(false),  new Pawn(false), new Pawn(false), new Empty(false),  new Empty(false),  new Empty(false) },
         {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
         {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
-        {new Empty(false), new Empty(false),  new Empty(false),  new Empty(false), new Empty(false), new Empty(false),  new Empty(false),  new Empty(false)},
+        {new Empty(false), new Empty(false),  new Empty(false),  new Pawn(true), new Pawn(true), new Empty(false),  new Empty(false),  new Empty(false)},
         {new Pawn(true),   new Pawn(true),    new Pawn(true),    new Pawn(true),   new Pawn(true),   new Pawn(true),    new Pawn(true),    new Pawn(true)},
         {new Rook(true),   new Knight(true),  new Bishop(true),  new Queen(true),  new King(true),   new Bishop(true),  new Knight(true),  new Rook(true) }
 
@@ -28,7 +28,12 @@ namespace Skakspil
         {
             Pieces piece = this.board[startPos.Item1, startPos.Item2];
 
-            if (!piece.empty && piece.white == whiteTurn)
+            Pieces maybeKing = this.board[endPos.Item1, endPos.Item2];
+            if (maybeKing.king)
+            {
+                Game.matchNumber++;
+            }
+            else if (!piece.empty && piece.white == whiteTurn)
             {
                 this.board[endPos.Item1, endPos.Item2] = piece;
 

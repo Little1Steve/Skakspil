@@ -13,6 +13,7 @@ namespace Skakspil
         public List<Moves> legalMoves;
         public bool white = false;
         public bool empty = false;
+        public bool king = false;
 
         public Pieces(bool white)
         {
@@ -37,6 +38,7 @@ namespace Skakspil
             {
                 name = "K";
             }
+            this.king = true;
         }
     }
     internal class Queen : Pieces

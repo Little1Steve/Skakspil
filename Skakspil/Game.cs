@@ -11,6 +11,7 @@ namespace Skakspil
     internal class Game
     {
         public Board board = new Board();
+        public static int matchNumber = 0;
         public void Play()
         {
             GetInput();
@@ -22,6 +23,13 @@ namespace Skakspil
             Console.WriteLine("");
             while (true)
             {
+                int points = 0;
+                if(points != matchNumber)
+                {
+                    points = matchNumber;
+                    Console.WriteLine($"You have now played {matchNumber} game(s)\nNow resetting the board");
+                    board = new Board();
+                }
                 Console.WriteLine("" +
     "╔═══╦═══╦═══╦═══╦═══╦═══╦═══╦═══╗\n" +
     $"║ {Display(0, 0)} ║ {Display(1, 0)} ║ {Display(2, 0)} ║ {Display(3, 0)} ║ {Display(4, 0)} ║ {Display(5, 0)} ║ {Display(6, 0)} ║ {Display(7, 0)} ║ 8\n" +
