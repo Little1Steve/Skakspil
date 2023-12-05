@@ -19,8 +19,14 @@ namespace Skakspil
 
         void GetInput()
         {
-            Console.WriteLine("Hi and welcome to this game of chess");
-            Console.WriteLine("");
+            Console.WriteLine("Hi and welcome to this game of chess.\n" +
+                "\n" +
+                "Now when you play this game you will be asked what piece you would like to move and where to repeatedly.\n" +
+                "To this you will first find the coordinates of the piece you would like to move.\n" +
+                "Then you will find the coordinates of the square you would like to move it to.\n" +
+                "An example of this would be \"e2e4\".\n");
+
+
             while (true)
             {
                 int points = 0;
